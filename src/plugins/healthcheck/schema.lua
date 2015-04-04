@@ -13,7 +13,8 @@ end
 return {
   protocol = { required = true, type = "string", enum = { "tcp", HTTP } },
   path = { required = true, type = "string", enum = { "tcp", "http" }, func = check_path },
-  response_timeout = { required = true, type = "number", default = 5},
-  interval = { required = true, type = "number", default = 30},
-  hide_credentials = { type = "boolean", default = false }
+  response_timeout = { required = true, type = "number", default = 5 },
+  interval = { required = true, type = "number", default = 30 },
+  hide_credentials = { type = "boolean", default = false },
+  webhook_url = { required = true, type = "string" }
 }
