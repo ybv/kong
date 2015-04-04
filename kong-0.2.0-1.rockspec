@@ -83,6 +83,10 @@ build = {
     ["kong.plugins.keyauth.schema"] = "src/plugins/keyauth/schema.lua",
     ["kong.plugins.keyauth.api"] = "src/plugins/keyauth/api.lua",
 
+    ["kong.plugins.healthcheck.handler"] = "src/plugins/healthcheck/handler.lua",
+    ["kong.plugins.healthcheck.init_worker"] = "src/plugins/healthcheck/init_worker.lua",
+    ["kong.plugins.healthcheck.schema"] = "src/plugins/healthcheck/schema.lua",
+
     ["kong.plugins.tcplog.handler"] = "src/plugins/tcplog/handler.lua",
     ["kong.plugins.tcplog.log"] = "src/plugins/tcplog/log.lua",
     ["kong.plugins.tcplog.schema"] = "src/plugins/tcplog/schema.lua",

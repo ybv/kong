@@ -2,6 +2,7 @@
 plugins_available:
   - keyauth
   - basicauth
+  - healthcheck
   - ratelimiting
   - tcplog
   - udplog
@@ -98,6 +99,8 @@ nginx: |
         os.exit(1)
       end
     ';
+
+    init_worker_by_lua 'kong.exec_plugins_init_worker()';
 
     server {
       listen 8000;

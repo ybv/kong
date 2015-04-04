@@ -149,6 +149,14 @@ function _M.init()
   plugins = init_plugins()
 end
 
+-- Calls init_worker() on every loaded plugin
+-- @return nil
+function _M.exec_plugins_init_worker()
+  for _, plugin in ipairs(plugins) do
+    plugin.handler:init_worker()
+  end
+end
+
 -- Calls plugins_access() on every loaded plugin
 -- @return nil
 function _M.exec_plugins_access()
