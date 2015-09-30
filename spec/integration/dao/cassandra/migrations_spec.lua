@@ -61,9 +61,9 @@ local CORE_MIGRATIONS_STUB = {
       ]]
     end,
     down = function()
-       return [[
-         DROP TABLE users2;
-       ]]
+      return [[
+        DROP TABLE users2;
+      ]]
     end
   }
 
